@@ -1,5 +1,3 @@
-using System.Text.Json.Serialization;
-using CryptoExchange.Net.Converters.SystemTextJson;
 using CryptoExchange.Net.Attributes;
 
 namespace Mexc.Net.Enums
@@ -13,7 +11,7 @@ namespace Mexc.Net.Enums
         /// <summary>
         /// Processing
         /// </summary>
-        [Map("WAI")]
+        [Map("WAIT")]
         Processing,
         /// <summary>
         /// Success

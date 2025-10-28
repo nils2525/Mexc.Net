@@ -8,7 +8,7 @@ namespace Mexc.Net.Interfaces.Clients.SpotApi
     /// <summary>
     /// Spot API socket subscriptions and requests
     /// </summary>
-    public interface IMexcSocketClientSpotApi: ISocketApiClient
+    public interface IMexcSocketClientSpotApi : ISocketApiClient
     {
         /// <summary>
         /// Get the shared socket subscription client. This interface is shared with other exchanges to allow for a common implementation for different exchanges.
@@ -170,7 +170,7 @@ namespace Mexc.Net.Interfaces.Clients.SpotApi
 
         /// <summary>
         /// Subscribe to account balance updates. Prior to using this, the <see cref="IMexcRestClientSpotApiAccount.StartUserStreamAsync(CancellationToken)">restClient.SpotApi.Account.StartUserStreamAsync</see> method should be called to start the stream and obtaining a listen key.
-        /// <para><a href="https://mexcdevelop.github.io/apidocs/spot_v3_en/#spot-account-upadte" /></para>
+        /// <para><a href="https://mexcdevelop.github.io/apidocs/spot_v3_en/#spot-account-update" /></para>
         /// </summary>
         /// <param name="listenKey">Listen key retrieved by the <see cref="IMexcRestClientSpotApiAccount.StartUserStreamAsync(CancellationToken)">restClient.SpotApi.Account.StartUserStreamAsync</see> method</param>
         /// <param name="handler">Data handler</param>

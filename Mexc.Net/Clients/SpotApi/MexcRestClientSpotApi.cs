@@ -24,6 +24,9 @@ namespace Mexc.Net.Clients.SpotApi
         public IMexcRestClientSpotApiTrading Trading { get; }
 
         /// <inheritdoc />
+        public IMexcRestClientSpotApiSubAccount SubAccount { get; }
+
+        /// <inheritdoc />
         public IMexcRestClientSpotApiShared SharedClient => this;
 
         /// <inheritdoc />
@@ -40,6 +43,7 @@ namespace Mexc.Net.Clients.SpotApi
             Account = new MexcRestClientSpotApiAccount(this);
             ExchangeData = new MexcRestClientSpotApiExchangeData(this);
             Trading = new MexcRestClientSpotApiTrading(this);
+            SubAccount = new MexcRestClientSpotApiSubAccount(this);
 
             RequestBodyEmptyContent = "";
             RequestBodyFormat = RequestBodyFormat.FormData;
